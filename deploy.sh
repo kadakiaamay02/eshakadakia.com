@@ -12,7 +12,7 @@ npx ng build --configuration production
 # 4. Move files to the NEW specific domain folder
 # Note: Using your project name 'amaykadakia-portfolio' from previous logs
 sudo rm -rf /var/www/eshakadakia.com/public_html/*
-sudo cp -r dist/eshakdakia-portfolio/* /var/www/eshakadakia.com/public_html/
+sudo cp -r dist/eshakadakia.com/* /var/www/eshakadakia.com/public_html/
 
 # 5. Reset permissions
 sudo chown -R www-data:www-data /var/www/eshakadakia.com/
