@@ -1,0 +1,22 @@
+
+<section class="experience-section">
+  <h2 class="section-title">Professional Experience</h2>
+
+  <div class="timeline">
+    @for (degree of degrees; track degree.school) {
+      <div class="experience-card">
+        <div class="card-header">
+          <h3 class="degree">{{ degree.degree }}</h3>
+          <span class="period">{{ degree.period }}</span>
+        </div>
+        <h4 class="school">{{ degree.school }}</h4>
+        
+        <ul class="description-list">
+          @for (bullet of degree.description; track bullet) {
+            <li>{{ bullet }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</section>
