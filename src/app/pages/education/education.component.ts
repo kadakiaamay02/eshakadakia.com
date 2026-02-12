@@ -36,6 +36,7 @@ export class EducationComponent {
       degree: 'Bachelor of Science in Public Health',
       period: 'Aug 2020 - May 2024',
       description: [
+        'Dean\'s list for sevenr out of eight semesters, demonstrating consistent academic excellence.',
         'Graduated with a BS in Public Health, gaining a strong foundation in health promotion and disease prevention.',
         'Completed coursework in epidemiology, health policy, and community health.',      ]
     }
