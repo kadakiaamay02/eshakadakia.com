@@ -17,10 +17,18 @@ interface WorkExperience {
 })
 export class ExperienceComponent {
   experiences: WorkExperience[] = [
+        {
+      company: 'LifeMoves',
+      role: '',
+      period: 'Aug 2026 - Present',
+      description: [
+        ''
+      ]
+    },
     {
       company: 'City of Fremont',
       role: 'Clinical Psychology Trainee, Youth and Family Services Practicum',
-      period: 'Aug 2025 - Present',
+      period: 'Aug 2025 - June 2026',
       description: [
         'Provided direct clinical services to children, adolescents, and families within a community mental health setting, including individual therapy, school-based interventions, and crisis support',
         'Conducted biopsychosocial assessments, risk assessments (including suicidality and self-harm), and treatment planning under licensed supervision',
