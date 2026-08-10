@@ -18,11 +18,17 @@ interface WorkExperience {
 export class ExperienceComponent {
   experiences: WorkExperience[] = [
         {
-      company: 'LifeMoves',
+      company: 'LifeMoves - Behavioral Health Program',
       role: '',
       period: 'Aug 2026 - Present',
-      description: [
-        ''
+      description: [ 
+        'Provide individual, group, and milieu-based behavioral health services to adults and families experiencing homelessness within a shelter-based, interdisciplinary setting.',
+        'Provide brief, trauma-informed clinical interventions focused on stabilization, coping skills, emotion regulation, and client-centered support.',
+        'Facilitate therapeutic groups addressing personal empowerment, anger management, emotion regulation, grief and loss, and interpersonal functioning.',
+        'Conduct clinical assessments, including intake evaluations, mental status examinations, and suicide/homicide risk assessments, under clinical supervision.',
+        'Develop and maintain individual caseload while completing clinical documentation, treatment planning, collateral contacts, and case coordination.',
+        'Collaborate with clinical supervisors, MSW trainees, case managers, and multidisciplinary shelter staff to coordinate client care and connect clients with appropriate services.',
+        'Receive foundational training in community-based neuropsychological assessment, including MMSE, TOPF, RBANS, Trails A/B, D-KEFS, WAIS, WRAML, and MIGDAS.'
       ]
     },
     {

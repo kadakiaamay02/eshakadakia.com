@@ -72,7 +72,7 @@ export class WOEComponent {
 
   get prompt(): string {
     if (this.path.length === 0) {
-      return 'How are you feeling?';
+      return '';
     }
     if (this.isComplete) {
       return 'You\'re feeling:';
@@ -91,4 +91,5 @@ export class WOEComponent {
   restart(): void {
     this.path = [];
   }
+
 }
