@@ -1,0 +1,48 @@
+<section class="woe">
+  <h1>Wheel of Emotions</h1>
+
+  @if (path.length) {
+    <nav class="breadcrumb" aria-label="Selected feelings">
+      <button type="button" class="crumb" (click)="restart()">Start</button>
+      @for (node of path; track node.label) {
+        <span>
+          <span class="sep">›</span>
+          <span class="crumb crumb--static" [style.color]="node.color">{{ node.label }}</span>
+        </span>
+      }
+    </nav>
+  }
+
+  <p class="prompt" aria-live="polite">{{ prompt }}</p>
+
+  @if (!isComplete) {
+    <div class="options">
+      @for (node of currentOptions; track node.label) {
+        <button
+          type="button"
+          class="option"
+          [style.background]="node.color"
+          (click)="select(node)"
+        >
+          {{ node.label }}
+        </button>
+      }
+    </div>
+  } @else {
+    <div class="result" [style.background]="path[path.length - 1].color">
+      <p class="result-label">{{ path[path.length - 1].label }}</p>
+    </div>
+  }
+
+  <div class="actions">
+    @if (path.length && !isComplete) {
+      <button type="button" class="back" (click)="back()">Back</button>
+    }
+    @if (isComplete) {
+      <button type="button" class="back" (click)="back()">Choose again</button>
+    }
+    @if (path.length) {
+      <button type="button" class="restart" (click)="restart()">Start over</button>
+    }
+  </div>
+</section>

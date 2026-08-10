@@ -4,4 +4,21 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+label[for],
+[role="button"],
+[routerLink],
+.clickable,
+*[onclick],
+:is(a, button, input[type="button"], input[type="submit"], input[type="reset"], select, label[for], [role="button"], [routerLink], .clickable, *[onclick]) *,
+[style*="cursor: pointer"],
+[style*="cursor:pointer"] {
+    cursor: url('app/assets/icons8-brain-50.png') 16 16, pointer;
+}
+
 //color palette: https://colorhunt.co/palette/f1e5d1dbb5b5c39898987070

@@ -14,6 +14,7 @@ export class NavBarComponent {
   navLinks = [
     { path: '/experience', label: 'Experience' },
     { path: '/education', label: 'Education' },
+    { path: '/woe', label: 'Wheel of Emotions' } 
   ];
 
   toggleMenu() {

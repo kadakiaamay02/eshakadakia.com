@@ -25,7 +25,7 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .nav-links a {
@@ -48,7 +48,7 @@
   gap: 5px;
   background: none;
   border: none;
-  cursor: pointer;
+  cursor: url('../../assets/icons8-brain-50.png') 16 16, pointer;
 }
 
 .bar {
@@ -65,12 +65,13 @@
   .nav-links {
     display: none;
     flex-direction: column;
+    gap: 1.25rem;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: #DBB5B5;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   }

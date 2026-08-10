@@ -9,16 +9,16 @@
     </button>
 
     <ul class="nav-links" [class.active]="isMenuOpen">
-      <li>
-        @for(link of navLinks; track link.path) {
-            <a 
-            [routerLink]="link.path" 
-            routerLinkActive="active-link" 
+      @for(link of navLinks; track link.path) {
+        <li>
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="active-link"
             (click)="isMenuOpen = false">
             {{ link.label }}
-            </a>
-        }
-      </li>
+          </a>
+        </li>
+      }
     </ul>
   </div>
 </nav>
